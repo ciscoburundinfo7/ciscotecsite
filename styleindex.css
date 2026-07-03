@@ -1,0 +1,466 @@
+/*====================================================
+        INDEX.HTML PREMIUM V2
+        CISCOTEC FOR IT SOLUTIONS BURUNDI
+====================================================*/
+
+/*================ HERO =================*/
+
+.hero{
+
+position:relative;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+background:
+linear-gradient(135deg,
+rgba(7,43,90,.92),
+rgba(7,43,90,.72),
+rgba(0,0,0,.60)),
+url("images/hero.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+background:
+radial-gradient(circle at top right,
+rgba(217,164,4,.15),
+transparent 45%);
+
+animation:heroGlow 8s infinite alternate;
+
+}
+
+@keyframes heroGlow{
+
+from{
+
+transform:scale(1);
+
+opacity:.5;
+
+}
+
+to{
+
+transform:scale(1.15);
+
+opacity:1;
+
+}
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+max-width:950px;
+
+padding:20px;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.hero-content h1{
+
+font-size:64px;
+
+font-weight:800;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+text-shadow:0 10px 30px rgba(0,0,0,.45);
+
+animation:slideUp 1s ease;
+
+}
+
+.hero-content p{
+
+font-size:22px;
+
+line-height:1.9;
+
+margin-bottom:40px;
+
+opacity:.95;
+
+animation:fadeIn 2s ease;
+
+}
+
+/*================ BOUTONS =================*/
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-buttons .btn,
+
+.hero-buttons .btn2{
+
+position:relative;
+
+overflow:hidden;
+
+min-width:240px;
+
+padding:17px 35px;
+
+font-size:17px;
+
+font-weight:700;
+
+letter-spacing:.5px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+transition:.45s;
+
+}
+
+.hero-buttons .btn::before,
+
+.hero-buttons .btn2::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:rgba(255,255,255,.25);
+
+transform:skewX(-25deg);
+
+transition:.8s;
+
+}
+
+.hero-buttons .btn:hover::before,
+
+.hero-buttons .btn2:hover::before{
+
+left:150%;
+
+}
+
+.hero-buttons .btn:hover,
+
+.hero-buttons .btn2:hover{
+
+transform:translateY(-8px);
+
+}
+
+/*================ PRESENTATION =================*/
+
+.presentation{
+
+background:linear-gradient(#ffffff,#f7f9fc);
+
+}
+
+.presentation-grid{
+
+margin-top:70px;
+
+}
+
+.presentation-grid .card{
+
+border:none;
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.45s;
+
+box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+border-bottom:6px solid transparent;
+
+}
+
+.presentation-grid .card:hover{
+
+border-bottom:6px solid #D9A404;
+
+transform:translateY(-15px);
+
+box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.presentation-grid .card i{
+
+transition:.6s;
+
+}
+
+.presentation-grid .card:hover i{
+
+transform:rotateY(360deg);
+
+}
+
+/*================ DOMAINES =================*/
+
+.why-us{
+
+background:#fff;
+
+}
+
+.why-card{
+
+border-radius:20px;
+
+transition:.5s;
+
+cursor:pointer;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.why-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:0;
+
+height:5px;
+
+background:#D9A404;
+
+transition:.45s;
+
+}
+
+.why-card:hover::before{
+
+width:100%;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+background:#072B5A;
+
+}
+
+.why-card:hover h3,
+
+.why-card:hover p{
+
+color:#fff;
+
+}
+
+.why-card:hover i{
+
+color:#D9A404;
+
+transform:scale(1.2);
+
+}
+
+/*================ TITRES =================*/
+
+.section-title h2{
+
+position:relative;
+
+display:inline-block;
+
+padding-bottom:18px;
+
+}
+
+.section-title h2::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+bottom:0;
+
+width:90px;
+
+height:5px;
+
+background:#D9A404;
+
+border-radius:10px;
+
+}
+
+/*================ STATISTIQUES =================*/
+
+.counter-section{
+
+background:
+
+linear-gradient(135deg,
+
+#072B5A,
+
+#041f42);
+
+}
+
+.counter-box{
+
+transition:.4s;
+
+}
+
+.counter-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.counter-box h2{
+
+text-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+/*================ FOOTER =================*/
+
+.footer{
+
+margin-top:0;
+
+background:linear-gradient(135deg,#04152c,#072B5A);
+
+}
+
+.footer-box h2{
+
+position:relative;
+
+padding-bottom:10px;
+
+}
+
+.footer-box h2::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:0;
+
+width:45px;
+
+height:3px;
+
+background:#D9A404;
+
+}
+
+.social-icons a{
+
+transition:.45s;
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-8px) rotate(360deg);
+
+}
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.hero-buttons .btn,
+
+.hero-buttons .btn2{
+
+width:100%;
+
+}
+
+}
